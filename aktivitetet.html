@@ -16,7 +16,8 @@
   <body>
     <header class="site-header" data-header>
       <a class="brand" href="index.html" aria-label="URA Sociale">
-        <span class="brand-mark">US</span>
+        <img class="brand-logo" src="assets/images/activities/urasocialelogo.png" alt="URA Sociale logo" />
+        <span class="brand-mark brand-fallback">US</span>
         <span>
           <strong>URA Sociale</strong>
           <small>Social Bridge</small>
@@ -33,14 +34,25 @@
         <a href="programet.html">Programet</a>
         <a class="active" href="aktivitetet.html">Aktivitetet</a>
         <a href="certifikatat.html">Certifikatat</a>
-        <a href="index.html#ndikimi">Ndikimi</a>
         <a href="index.html#kontakt">Kontakt</a>
+        <span class="language-switch" aria-label="Language">
+          <a class="active" href="aktivitetet.html" lang="sq">AL</a>
+          <a href="aktivitetet-en.html" lang="en">EN</a>
+        </span>
       </nav>
     </header>
 
     <main>
       <section class="page-hero activities-hero" aria-labelledby="page-title">
-        <div class="page-hero-bg" aria-hidden="true"></div>
+        <div
+          class="page-hero-bg"
+          data-hero-rotator
+          data-hero-images="assets/images/activities/ballinabackground.jpg|assets/images/activities/ballinabackground2.jpg|assets/images/activities/ballinabackground3.jpg"
+          aria-hidden="true"
+        >
+          <span class="hero-bg-layer is-active"></span>
+          <span class="hero-bg-layer"></span>
+        </div>
         <div class="page-hero-overlay" aria-hidden="true"></div>
         <div class="page-shell page-hero-content">
           <p class="eyebrow">Aktivitetet</p>

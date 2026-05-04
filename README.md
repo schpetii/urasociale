@@ -13,12 +13,52 @@ Created pages:
 - `programet.html` - dedicated programs page
 - `aktivitetet.html` - dedicated activities archive page
 - `certifikatat.html` - dedicated certificates archive page
+- `index-en.html` - English homepage / overview
+- `misioni-en.html` - English mission page
+- `programet-en.html` - English programs page
+- `aktivitetet-en.html` - English activities archive page
+- `certifikatat-en.html` - English certificates archive page
 
 Created support files:
 
 - `styles.css` - shared responsive styling for all pages
 - `script.js` - mobile menu, icon initialization, and activity filters
 - `research-notes.md` - notes about public sources and content still needed
+- `assets/` - folder structure for logos, photos, certificates, and icons
+
+## Where To Add Images And Documents
+
+Use this structure:
+
+```text
+assets/
+  images/
+    logo.png
+    hero.jpg
+    activities/
+      activity-1.jpg
+      activity-2.jpg
+    certificates/
+      certificate-1.pdf
+      certificate-1.jpg
+  icons/
+```
+
+The website header already looks for the logo here:
+
+```text
+assets/images/logo.png
+```
+
+If `logo.png` does not exist yet, the site shows the fallback `US` circle. When you add the real logo file with that exact name, it will appear automatically.
+
+Recommended naming:
+
+- `assets/images/logo.png` - official logo
+- `assets/images/hero.jpg` - homepage hero image, if replacing the current online placeholder
+- `assets/images/activities/activity-name.jpg` - real activity photos
+- `assets/images/certificates/certificate-name.pdf` - certificate PDFs
+- `assets/images/certificates/certificate-name.jpg` - certificate images or scans
 
 ## Current Website Structure
 
@@ -29,23 +69,19 @@ The navigation currently contains:
 - Programet
 - Aktivitetet
 - Certifikatat
-- Ndikimi
 - Kontakt
+- Language switcher: `AL` and `EN`
+
+The Albanian pages link to their matching English pages, and the English pages link back to their matching Albanian pages.
 
 The homepage includes:
 
 - Large modern hero section
 - Verified impact stats
-- Mission preview
-- Programs preview
-- Featured education initiative
-- Activities preview with filters
-- Impact timeline
-- Formats for schools and institutions
-- Partner section
-- Certificates teaser
-- Public source links
-- Contact section
+- Slow rotating slideshow for Mission, Programs, and Certificates
+- Compact contact block
+
+The detailed content now lives on separate pages instead of all being shown on `Ballina`.
 
 ## Verified Public Information Used
 
