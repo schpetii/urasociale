@@ -9,6 +9,9 @@
     />
     <title>URA Sociale | Social Bridge</title>
     <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
     <script src="script.js" defer></script>
@@ -31,9 +34,7 @@
       <nav class="site-nav" data-nav>
         <a class="active" href="index-en.html">Home</a>
         <a href="misioni-en.html">Mission</a>
-        <a href="programet-en.html">Programs</a>
         <a href="aktivitetet-en.html">Activities</a>
-        <a href="certifikatat-en.html">Certificates</a>
         <a href="index-en.html#contact">Contact</a>
         <span class="language-switch" aria-label="Language">
           <a href="index.html" lang="sq">AL</a>
@@ -119,7 +120,7 @@
         <div class="page-shell landing-slider" data-slideshow>
           <div class="slider-intro">
             <p class="eyebrow dark">Explore the site</p>
-            <h2 id="slider-title">Mission, programs and certificates in a calm rotating presentation.</h2>
+            <h2 id="slider-title">The URA Sociale mission in a calm presentation.</h2>
           </div>
 
           <div class="slide-stage">
@@ -137,66 +138,70 @@
                 </a>
               </div>
             </article>
-
-            <article class="landing-slide" data-slide>
-              <div class="slide-media programs-slide-media" aria-hidden="true"></div>
-              <div class="slide-copy">
-                <span class="tag">Programs</span>
-                <h3>Clear work areas for education, equality, inclusion and advocacy.</h3>
-                <p>
-                  Programs help schools, partners and donors understand where they can cooperate.
-                </p>
-                <a class="button button-dark" href="programet-en.html">
-                  <i data-lucide="arrow-right"></i>
-                  View programs
-                </a>
-              </div>
-            </article>
-
-            <article class="landing-slide" data-slide>
-              <div class="slide-media certificates-slide-media" aria-hidden="true"></div>
-              <div class="slide-copy">
-                <span class="tag">Certificates</span>
-                <h3>An archive for certificates, trainings and completion documents.</h3>
-                <p>
-                  This space can hold certificates, recognitions, project documents and training participation records.
-                </p>
-                <a class="button button-dark" href="certifikatat-en.html">
-                  <i data-lucide="arrow-right"></i>
-                  View certificates
-                </a>
-              </div>
-            </article>
-          </div>
-
-          <div class="slide-dots" aria-label="Choose slide">
-            <button class="active" type="button" data-slide-dot="0" aria-label="Show mission"></button>
-            <button type="button" data-slide-dot="1" aria-label="Show programs"></button>
-            <button type="button" data-slide-dot="2" aria-label="Show certificates"></button>
           </div>
         </div>
       </section>
 
       <section class="home-contact" id="contact">
         <div class="page-shell home-contact-layout">
-          <div>
+          <div class="home-contact-info">
             <p class="eyebrow">Contact</p>
             <h2>Build a new bridge of cooperation.</h2>
+            <address class="home-contact-card">
+              <span>
+                <i data-lucide="map-pin"></i>
+                Deshmoret e Kombit, no. 13, Vushtrri
+              </span>
+              <span>
+                <i data-lucide="user-round"></i>
+                Representative: Mergime Jashari
+              </span>
+              <a href="mailto:office@urasociale.com">
+                <i data-lucide="mail"></i>
+                office@urasociale.com
+              </a>
+              <a href="https://facebook.com/urasociale" target="_blank" rel="noreferrer">
+                <i data-lucide="external-link"></i>
+                facebook.com/urasociale
+              </a>
+            </address>
           </div>
-          <address class="home-contact-card">
-            <span>
-              <i data-lucide="map-pin"></i>
-              Deshmoret e Kombit, no. 13, Vushtrri
-            </span>
-            <span>
-              <i data-lucide="user-round"></i>
-              Representative: Mergime Jashari
-            </span>
-            <a href="https://facebook.com/urasociale" target="_blank" rel="noreferrer">
-              <i data-lucide="external-link"></i>
-              facebook.com/urasociale
-            </a>
-          </address>
+          <form class="contact-form" action="https://formsubmit.co/office@urasociale.com" method="POST">
+            <input type="hidden" name="_subject" value="New message from the URA Sociale website" />
+            <input type="hidden" name="_template" value="table" />
+            <input class="form-honey" type="text" name="_honey" tabindex="-1" autocomplete="off" />
+
+            <div class="form-header">
+              <p class="eyebrow">Write directly</p>
+              <h3>Send a message</h3>
+            </div>
+
+            <div class="form-grid">
+              <label>
+                Name
+                <input type="text" name="name" autocomplete="name" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" autocomplete="email" required />
+              </label>
+            </div>
+
+            <label>
+              Subject
+              <input type="text" name="subject" required />
+            </label>
+
+            <label>
+              Message
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+
+            <button class="button button-primary contact-submit" type="submit">
+              <i data-lucide="send"></i>
+              Send message
+            </button>
+          </form>
         </div>
       </section>
     </main>

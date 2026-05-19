@@ -10,21 +10,17 @@ Created pages:
 
 - `index.html` - homepage / overview
 - `misioni.html` - dedicated mission page
-- `programet.html` - dedicated programs page
 - `aktivitetet.html` - dedicated activities archive page
-- `certifikatat.html` - dedicated certificates archive page
 - `index-en.html` - English homepage / overview
 - `misioni-en.html` - English mission page
-- `programet-en.html` - English programs page
 - `aktivitetet-en.html` - English activities archive page
-- `certifikatat-en.html` - English certificates archive page
 
 Created support files:
 
 - `styles.css` - shared responsive styling for all pages
 - `script.js` - mobile menu, icon initialization, and activity filters
 - `research-notes.md` - notes about public sources and content still needed
-- `assets/` - folder structure for logos, photos, certificates, and icons
+- `assets/` - folder structure for logos, photos, and icons
 
 ## Where To Add Images And Documents
 
@@ -38,9 +34,6 @@ assets/
     activities/
       activity-1.jpg
       activity-2.jpg
-    certificates/
-      certificate-1.pdf
-      certificate-1.jpg
   icons/
 ```
 
@@ -57,8 +50,6 @@ Recommended naming:
 - `assets/images/logo.png` - official logo
 - `assets/images/hero.jpg` - homepage hero image, if replacing the current online placeholder
 - `assets/images/activities/activity-name.jpg` - real activity photos
-- `assets/images/certificates/certificate-name.pdf` - certificate PDFs
-- `assets/images/certificates/certificate-name.jpg` - certificate images or scans
 
 ## Current Website Structure
 
@@ -66,9 +57,7 @@ The navigation currently contains:
 
 - Ballina
 - Misioni
-- Programet
 - Aktivitetet
-- Certifikatat
 - Kontakt
 - Language switcher: `AL` and `EN`
 
@@ -78,10 +67,10 @@ The homepage includes:
 
 - Large modern hero section
 - Verified impact stats
-- Slow rotating slideshow for Mission, Programs, and Certificates
-- Compact contact block
+- Mission presentation section
+- Contact block with direct message form
 
-The detailed content now lives on separate pages instead of all being shown on `Ballina`.
+The mission and activities content now lives on separate pages instead of all being shown on `Ballina`.
 
 ## Verified Public Information Used
 
@@ -123,16 +112,13 @@ Real organization assets:
 - Official logo
 - Official brand colors
 - Real photos from activities
-- Certificate scans or PDFs
 - Phone number
-- Email address
 - Full official mission statement, if different from the proposed copy
 - Founding year
 - Team / board information
 
 Content improvements:
 
-- Replace placeholder certificate rows with real files
 - Add real Facebook activity photos
 - Add full project archive if available
 - Decide if the site should be Albanian only or multilingual
@@ -145,3 +131,4 @@ Content improvements:
 - Icons load from Lucide via CDN.
 - Activity filtering works through `script.js`.
 - All pages share the same `styles.css` file.
+- Contact form submissions are sent to `office@urasociale.com` through FormSubmit.

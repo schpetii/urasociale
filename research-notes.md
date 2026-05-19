@@ -45,7 +45,6 @@ Direct unauthenticated fetching of Facebook was blocked, so the website content 
 
 - Official logo and brand colors.
 - Real photos from Facebook activities.
-- Certificate scans, PDFs, titles, issuing institutions, and years.
-- Phone number and email.
+- Phone number.
 - Founding year, board/team, statute/mission statement, and full project archive.
 - Confirmation of preferred language setup: Albanian only, Albanian/English, or Albanian/English/Serbian.

@@ -9,6 +9,9 @@
     />
     <title>URA Sociale | Social Bridge</title>
     <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
     <script src="script.js" defer></script>
@@ -31,9 +34,7 @@
       <nav class="site-nav" data-nav>
         <a class="active" href="index.html">Ballina</a>
         <a href="misioni.html">Misioni</a>
-        <a href="programet.html">Programet</a>
         <a href="aktivitetet.html">Aktivitetet</a>
-        <a href="certifikatat.html">Certifikatat</a>
         <a href="index.html#kontakt">Kontakt</a>
         <span class="language-switch" aria-label="Language">
           <a class="active" href="index.html" lang="sq">AL</a>
@@ -56,10 +57,10 @@
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="hero-content page-shell">
           <div class="hero-copy">
-            <p class="eyebrow">Organizate per Zhvillim dhe Komunikim ne Vushtrri</p>
-            <h3 id="hero-title">URA Sociale lidh komunitetin me edukim, dinjitet dhe mundesi te barabarta.</h3
+            <p class="eyebrow">Organizate komunitare ne Vushtrri</p>
+            <h1 id="hero-title">Nje ure per te rinjte, shkollat dhe komunitetin.</h1>
             <p class="hero-lede">
-              Ne asistojme dhe bashkepunojme per avancimin e pozites se te rinjve ne shoqeri.
+              Krijojme hapesira ku edukimi, dinjiteti dhe mundesite e barabarta kthehen ne veprim te perbashket.
             </p>
             <div class="hero-actions" aria-label="Veprime kryesore">
               <a class="button button-primary" href="aktivitetet.html">
@@ -74,22 +75,18 @@
           </div>
 
           <div class="hero-panel" aria-label="Fokuset kryesore">
-            <div class="focus-pill">
+            <a class="focus-pill" href="aktivitetet.html?filter=education#arkiva">
               <i data-lucide="graduation-cap"></i>
               Edukim cilesor
-            </div>
-            <div class="focus-pill">
+            </a>
+            <a class="focus-pill" href="aktivitetet.html?filter=gender#arkiva">
               <i data-lucide="scale"></i>
               Barazi gjinore
-            </div>
-            <div class="focus-pill">
+            </a>
+            <a class="focus-pill" href="aktivitetet.html?filter=inclusion#arkiva">
               <i data-lucide="heart-handshake"></i>
               Perfshirje sociale
-            </div>
-            <div class="focus-pill">
-              <i data-lucide="messages-square"></i>
-              Dialog institucional
-            </div>
+            </a>
           </div>
         </div>
       </section>
@@ -97,7 +94,7 @@
       <section class="impact-strip" aria-label="Te dhena te verifikuara">
         <div class="page-shell impact-grid">
           <article>
-            <strong>300</strong>
+            <strong>548</strong>
             <span>nxenes te perfshire ne hulumtim dhe takime mbi edukimin cilesor</span>
           </article>
           <article>
@@ -119,7 +116,7 @@
         <div class="page-shell landing-slider" data-slideshow>
           <div class="slider-intro">
             <p class="eyebrow dark">Eksploro faqen</p>
-            <h2 id="slider-title">Misioni, programet dhe certifikatat ne nje prezantim te qete.</h2>
+            <h2 id="slider-title">Misioni i URA Sociale ne nje prezantim te qete.</h2>
           </div>
 
           <div class="slide-stage">
@@ -137,68 +134,70 @@
                 </a>
               </div>
             </article>
-
-            <article class="landing-slide" data-slide>
-              <div class="slide-media programs-slide-media" aria-hidden="true"></div>
-              <div class="slide-copy">
-                <span class="tag">Programet</span>
-                <h3>Fusha pune te qarta per edukim, barazi, perfshirje dhe avokim.</h3>
-                <p>
-                  Programet e organizojne punen ne menyre qe shkollat, partneret dhe donatoret te kuptojne
-                  ku mund te bashkepunojne.
-                </p>
-                <a class="button button-dark" href="programet.html">
-                  <i data-lucide="arrow-right"></i>
-                  Shiko programet
-                </a>
-              </div>
-            </article>
-
-            <article class="landing-slide" data-slide>
-              <div class="slide-media certificates-slide-media" aria-hidden="true"></div>
-              <div class="slide-copy">
-                <span class="tag">Certifikatat</span>
-                <h3>Arkive per certifikatat, trajnimet dhe dokumentet e perfundimit.</h3>
-                <p>
-                  Ketu mund te vendosen certifikatat, mirenjohjet, dokumentet e projekteve dhe pjesemarrjet
-                  ne trajnime.
-                </p>
-                <a class="button button-dark" href="certifikatat.html">
-                  <i data-lucide="arrow-right"></i>
-                  Shiko certifikatat
-                </a>
-              </div>
-            </article>
-          </div>
-
-          <div class="slide-dots" aria-label="Zgjedh slajdin">
-            <button class="active" type="button" data-slide-dot="0" aria-label="Shfaq misionin"></button>
-            <button type="button" data-slide-dot="1" aria-label="Shfaq programet"></button>
-            <button type="button" data-slide-dot="2" aria-label="Shfaq certifikatat"></button>
           </div>
         </div>
       </section>
 
       <section class="home-contact" id="kontakt">
         <div class="page-shell home-contact-layout">
-          <div>
+          <div class="home-contact-info">
             <p class="eyebrow">Kontakt</p>
             <h2>Te ndertojme nje ure te re bashkepunimi.</h2>
+            <address class="home-contact-card">
+              <span>
+                <i data-lucide="map-pin"></i>
+                Deshmoret e Kombit, nr. 13, Vushtrri
+              </span>
+              <span>
+                <i data-lucide="user-round"></i>
+                Perfaqesuese: Mergime Jashari
+              </span>
+              <a href="mailto:office@urasociale.com">
+                <i data-lucide="mail"></i>
+                office@urasociale.com
+              </a>
+              <a href="https://facebook.com/urasociale" target="_blank" rel="noreferrer">
+                <i data-lucide="external-link"></i>
+                facebook.com/urasociale
+              </a>
+            </address>
           </div>
-          <address class="home-contact-card">
-            <span>
-              <i data-lucide="map-pin"></i>
-              Deshmoret e Kombit, nr. 13, Vushtrri
-            </span>
-            <span>
-              <i data-lucide="user-round"></i>
-              Perfaqesuese: Mergime Jashari
-            </span>
-            <a href="https://facebook.com/urasociale" target="_blank" rel="noreferrer">
-              <i data-lucide="external-link"></i>
-              facebook.com/urasociale
-            </a>
-          </address>
+          <form class="contact-form" action="https://formsubmit.co/office@urasociale.com" method="POST">
+            <input type="hidden" name="_subject" value="Mesazh i ri nga faqja e URA Sociale" />
+            <input type="hidden" name="_template" value="table" />
+            <input class="form-honey" type="text" name="_honey" tabindex="-1" autocomplete="off" />
+
+            <div class="form-header">
+              <p class="eyebrow">Shkruani direkt</p>
+              <h3>Dergo nje mesazh</h3>
+            </div>
+
+            <div class="form-grid">
+              <label>
+                Emri
+                <input type="text" name="name" autocomplete="name" required />
+              </label>
+              <label>
+                Emaili
+                <input type="email" name="email" autocomplete="email" required />
+              </label>
+            </div>
+
+            <label>
+              Subjekti
+              <input type="text" name="subject" required />
+            </label>
+
+            <label>
+              Mesazhi
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+
+            <button class="button button-primary contact-submit" type="submit">
+              <i data-lucide="send"></i>
+              Dergo mesazhin
+            </button>
+          </form>
         </div>
       </section>
     </main>

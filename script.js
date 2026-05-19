@@ -5,6 +5,7 @@ const filterButtons = document.querySelectorAll("[data-filter]");
 const activityCards = document.querySelectorAll("[data-category]");
 const brandLogos = document.querySelectorAll(".brand-logo");
 const heroRotators = document.querySelectorAll("[data-hero-rotator]");
+const rotatingImages = document.querySelectorAll("[data-rotating-images]");
 const slideshows = document.querySelectorAll("[data-slideshow]");
 const isEnglish = document.documentElement.lang === "en";
 const openMenuLabel = isEnglish ? "Open menu" : "Hap menune";
@@ -112,6 +113,56 @@ heroRotators.forEach((rotator) => {
   scheduleNextSwap();
 });
 
+rotatingImages.forEach((image) => {
+  const images = [
+    ...new Set(
+      (image.dataset.rotatingImages ?? "")
+        .split("|")
+        .map((imagePath) => imagePath.trim())
+        .filter(Boolean),
+    ),
+  ];
+  const configuredInterval = Number(image.dataset.rotatingInterval);
+  const interval = Number.isFinite(configuredInterval) && configuredInterval >= 1500 ? configuredInterval : 5200;
+  let imageIndex = images.indexOf(image.getAttribute("src") ?? "");
+
+  if (images.length <= 1) {
+    return;
+  }
+
+  if (imageIndex < 0) {
+    imageIndex = 0;
+    image.src = images[0];
+  }
+
+  const frame = document.createElement("div");
+  const nextImage = document.createElement("img");
+
+  frame.className = "activity-image-rotator";
+  image.parentNode?.insertBefore(frame, image);
+  frame.append(image, nextImage);
+
+  image.classList.add("is-active");
+  nextImage.alt = "";
+  nextImage.setAttribute("aria-hidden", "true");
+  nextImage.src = images[(imageIndex + 1) % images.length];
+
+  images.forEach((imagePath) => {
+    const preload = new Image();
+    preload.src = imagePath;
+  });
+
+  window.setInterval(() => {
+    const currentImage = frame.querySelector("img.is-active");
+    const incomingImage = currentImage === image ? nextImage : image;
+
+    imageIndex = (imageIndex + 1) % images.length;
+    incomingImage.src = images[imageIndex];
+    incomingImage.classList.add("is-active");
+    currentImage?.classList.remove("is-active");
+  }, interval);
+});
+
 navToggle?.addEventListener("click", () => {
   const isOpen = nav?.classList.toggle("is-open");
   header?.classList.toggle("is-open", Boolean(isOpen));
@@ -132,17 +183,25 @@ nav?.addEventListener("click", (event) => {
   }
 });
 
+function applyActivityFilter(filter) {
+  filterButtons.forEach((item) => item.classList.toggle("active", item.dataset.filter === filter));
+  activityCards.forEach((card) => {
+    const categories = card.dataset.category?.split(" ") ?? [];
+    card.classList.toggle("is-hidden", filter !== "all" && !categories.includes(filter));
+  });
+}
+
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    const filter = button.dataset.filter ?? "all";
-
-    filterButtons.forEach((item) => item.classList.toggle("active", item === button));
-    activityCards.forEach((card) => {
-      const categories = card.dataset.category?.split(" ") ?? [];
-      card.classList.toggle("is-hidden", filter !== "all" && !categories.includes(filter));
-    });
+    applyActivityFilter(button.dataset.filter ?? "all");
   });
 });
+
+if (filterButtons.length > 0) {
+  const requestedFilter = new URLSearchParams(window.location.search).get("filter") ?? "all";
+  const filterExists = Array.from(filterButtons).some((button) => button.dataset.filter === requestedFilter);
+  applyActivityFilter(filterExists ? requestedFilter : "all");
+}
 
 slideshows.forEach((slideshow) => {
   const slides = Array.from(slideshow.querySelectorAll("[data-slide]"));
