@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="sq">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Kontakt dhe portfolio e ekipit drejtues te URA Sociale ne Vushtrri."
+    />
+    <title>Kontakt | URA Sociale</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body class="contact-page">
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="URA Sociale">
+        <img class="brand-logo" src="assets/images/activities/urasocialelogo.png" alt="URA Sociale logo" />
+        <span class="brand-mark brand-fallback">US</span>
+        <span>
+          <strong>URA Sociale</strong>
+          <small>Social Bridge</small>
+        </span>
+      </a>
+
+      <button class="icon-button nav-toggle" type="button" aria-label="Hap menune" data-nav-toggle>
+        <i data-lucide="menu"></i>
+      </button>
+
+      <nav class="site-nav" data-nav>
+        <a href="index.html">Ballina</a>
+        <a href="misioni.html">Misioni</a>
+        <a href="aktivitetet.html">Aktivitetet</a>
+        <a class="active" href="kontakt.html">Kontakt</a>
+        <span class="language-switch" aria-label="Language">
+          <a class="active" href="kontakt.html" lang="sq">AL</a>
+          <a href="index-en.html#contact" lang="en">EN</a>
+        </span>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero contact-hero" aria-labelledby="page-title">
+        <div
+          class="page-hero-bg"
+          data-hero-rotator
+          data-hero-images="assets/images/activities/ballinabackground4.jpg|assets/images/activities/ballinabackground5.jpg|assets/images/activities/ballinabackground6.jpg"
+          aria-hidden="true"
+        >
+          <span class="hero-bg-layer is-active"></span>
+          <span class="hero-bg-layer"></span>
+        </div>
+        <div class="page-hero-overlay" aria-hidden="true"></div>
+        <div class="page-shell page-hero-content">
+          <p class="eyebrow">Kontakt dhe ekipi</p>
+          <h1 id="page-title">Ekipi pas URA Sociale.</h1>
+          <p class="hero-lede">
+            Ketu mund te gjeni rolet kryesore te organizates, nje prezantim te shkurter profesional
+            dhe menyrat per te nisur bashkepunim.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-white" aria-labelledby="team-title">
+        <div class="page-shell team-intro">
+          <p class="eyebrow dark">Portfolio</p>
+          <h2 id="team-title">Drejtimi i organizates</h2>
+        </div>
+
+        <div class="page-shell profile-stack">
+          <article class="profile-section">
+            <div class="profile-portrait" aria-hidden="true">
+              <span>CEO</span>
+            </div>
+            <div class="profile-copy">
+              <p class="eyebrow dark">Chief Executive Officer</p>
+              <h3>Mergime Jashari</h3>
+              <p>
+                Si udheheqese ekzekutive, ajo kujdeset per drejtimin e pergjithshem te organizates,
+                koordinimin e projekteve dhe bashkepunimin me institucione, shkolla dhe partnere lokal.
+              </p>
+              <p>
+                Puna e saj fokusohet ne krijimin e hapesirave ku te rinjte, familjet dhe komuniteti marrin
+                mbeshtetje praktike per edukim, perfshirje dhe barazi.
+              </p>
+            </div>
+          </article>
+
+          <article class="profile-section profile-section-alt">
+            <div class="profile-portrait" aria-hidden="true">
+              <span>CFO</span>
+            </div>
+            <div class="profile-copy">
+              <p class="eyebrow dark">Chief Financial Officer</p>
+              <h3>CFO i organizates</h3>
+              <p>
+                Roli financiar siguron planifikim te kujdesshem te buxheteve, menaxhim transparent te
+                fondeve dhe raportim te rregullt per projektet qe implementohen nga URA Sociale.
+              </p>
+              <p>
+                Ky profil mund te plotesohet me emrin, pervojen dhe biografine personale sapo te jete gati
+                teksti zyrtar i organizates.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="home-contact contact-page-section">
+        <div class="page-shell home-contact-layout">
+          <div class="home-contact-info">
+            <p class="eyebrow">Kontakt</p>
+           
+            <address class="home-contact-card">
+              <span>
+                <i data-lucide="map-pin"></i>
+                Deshmoret e Kombit, nr. 13, Vushtrri
+              </span>
+              <span>
+                <i data-lucide="user-round"></i>
+                Perfaqesuese: Mergime Jashari
+              </span>
+              <a href="mailto:office@urasociale.com">
+                <i data-lucide="mail"></i>
+                office@urasociale.com
+              </a>
+              <a href="https://facebook.com/urasociale" target="_blank" rel="noreferrer">
+                <i data-lucide="external-link"></i>
+                facebook.com/urasociale
+              </a>
+            </address>
+          </div>
+          <form class="contact-form" action="https://formsubmit.co/office@urasociale.com" method="POST">
+            <input type="hidden" name="_subject" value="Mesazh i ri nga faqja e URA Sociale" />
+            <input type="hidden" name="_template" value="table" />
+            <input class="form-honey" type="text" name="_honey" tabindex="-1" autocomplete="off" />
+
+            <div class="form-header">
+              <p class="eyebrow">Shkruani direkt</p>
+              <h3>Dergo nje mesazh</h3>
+            </div>
+
+            <div class="form-grid">
+              <label>
+                Emri
+                <input type="text" name="name" autocomplete="name" required />
+              </label>
+              <label>
+                Emaili
+                <input type="email" name="email" autocomplete="email" required />
+              </label>
+            </div>
+
+            <label>
+              Subjekti
+              <input type="text" name="subject" required />
+            </label>
+
+            <label>
+              Mesazhi
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+
+            <button class="button button-primary contact-submit" type="submit">
+              <i data-lucide="send"></i>
+              Dergo mesazhin
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-shell footer-layout">
+        <span>URA Sociale - Social Bridge</span>
+        <span><a href="kontakt.html">Kontakt</a></span>
+      </div>
+    </footer>
+  </body>
+</html>

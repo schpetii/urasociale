@@ -206,6 +206,8 @@ if (filterButtons.length > 0) {
 slideshows.forEach((slideshow) => {
   const slides = Array.from(slideshow.querySelectorAll("[data-slide]"));
   const dots = Array.from(slideshow.querySelectorAll("[data-slide-dot]"));
+  const previousButton = slideshow.querySelector("[data-slide-prev]");
+  const nextButton = slideshow.querySelector("[data-slide-next]");
   let activeIndex = 0;
   let timer;
 
@@ -235,6 +237,16 @@ slideshows.forEach((slideshow) => {
       showSlide(Number(dot.dataset.slideDot ?? 0));
       startSlideshow();
     });
+  });
+
+  previousButton?.addEventListener("click", () => {
+    showSlide(activeIndex - 1);
+    startSlideshow();
+  });
+
+  nextButton?.addEventListener("click", () => {
+    showSlide(activeIndex + 1);
+    startSlideshow();
   });
 
   showSlide(0);
