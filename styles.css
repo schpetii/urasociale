@@ -616,6 +616,30 @@ h3 {
   font-size: 0.86rem;
 }
 
+.hero-impact {
+  position: relative;
+  padding-bottom: clamp(22px, 4vh, 36px);
+}
+
+.hero-impact article {
+  min-height: 112px;
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.075);
+  backdrop-filter: blur(12px);
+}
+
+.hero-impact article:last-child {
+  border-right-color: rgba(255, 255, 255, 0.18);
+}
+
+.hero-impact strong {
+  font-size: clamp(1.55rem, 2.7vw, 2.65rem);
+}
+
+.hero-impact span {
+  color: rgba(255, 255, 255, 0.82);
+}
+
 .section {
   padding: clamp(48px, 7vw, 88px) 0;
 }
@@ -2036,8 +2060,8 @@ h3 {
   }
 
   .home-hero .hero-content {
-    min-height: 560px;
-    padding-bottom: 48px;
+    min-height: 500px;
+    padding-bottom: 24px;
   }
 
   h2 {
@@ -2119,6 +2143,14 @@ h3 {
     max-width: none;
     font-size: 0.9rem;
     line-height: 1.45;
+  }
+
+  .hero-impact {
+    padding-bottom: 24px;
+  }
+
+  .hero-impact article {
+    min-height: 0;
   }
 
   .contact-page-section {
