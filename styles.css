@@ -240,7 +240,7 @@ textarea {
 }
 
 .hero-bg {
-  background-image: url("assets/images/activities/ballinabackground.jpg");
+  background-image: url("assets/images/activities/gymn1.jpg");
   background-position: center;
   background-size: cover;
   overflow: hidden;
@@ -617,13 +617,13 @@ h3 {
 
 .section-white {
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.68), rgba(251, 250, 247, 0.96)),
+    linear-gradient(135deg, rgba(251, 250, 247, 0.84), rgba(236, 244, 238, 0.92)),
     var(--paper);
 }
 
 .section-muted {
   background:
-    linear-gradient(135deg, rgba(157, 226, 209, 0.22), rgba(255, 241, 199, 0.22)),
+    linear-gradient(135deg, rgba(15, 118, 110, 0.13), rgba(244, 199, 107, 0.16)),
     var(--soft);
 }
 
@@ -649,14 +649,17 @@ h3 {
 
 .work-fields-section::before {
   background:
-    linear-gradient(115deg, transparent 0 14%, rgba(47, 128, 237, 0.08) 14% 20%, transparent 20%),
-    linear-gradient(115deg, transparent 0 82%, rgba(215, 154, 30, 0.12) 82% 88%, transparent 88%);
+    linear-gradient(115deg, transparent 0 14%, rgba(15, 118, 110, 0.09) 14% 20%, transparent 20%),
+    linear-gradient(115deg, transparent 0 82%, rgba(244, 199, 107, 0.15) 82% 88%, transparent 88%),
+    radial-gradient(circle at 12% 18%, rgba(157, 226, 209, 0.22), transparent 28%),
+    radial-gradient(circle at 90% 84%, rgba(217, 85, 74, 0.11), transparent 30%);
 }
 
 .about-intro-section::before {
   background:
-    linear-gradient(115deg, transparent 0 55%, rgba(15, 118, 110, 0.1) 55% 65%, transparent 65%),
-    linear-gradient(115deg, transparent 0 72%, rgba(217, 85, 74, 0.08) 72% 78%, transparent 78%);
+    linear-gradient(115deg, transparent 0 55%, rgba(15, 118, 110, 0.12) 55% 65%, transparent 65%),
+    linear-gradient(115deg, transparent 0 72%, rgba(244, 199, 107, 0.14) 72% 78%, transparent 78%),
+    radial-gradient(circle at 8% 18%, rgba(157, 226, 209, 0.2), transparent 30%);
 }
 
 .about-intro,
@@ -679,8 +682,8 @@ h3 {
   border: 1px solid rgba(15, 118, 110, 0.18);
   border-radius: 16px;
   background:
-    linear-gradient(135deg, rgba(15, 118, 110, 0.14), rgba(255, 241, 199, 0.52)),
-    rgba(255, 255, 255, 0.78);
+    linear-gradient(135deg, rgba(15, 118, 110, 0.18), rgba(244, 199, 107, 0.22)),
+    rgba(255, 255, 255, 0.82);
   box-shadow: var(--shadow);
 }
 
@@ -842,19 +845,19 @@ h3 {
 }
 
 .value-card:nth-child(1) {
-  background: linear-gradient(180deg, #ffffff 0%, #eefaf6 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #edf7f3 100%);
 }
 
 .value-card:nth-child(2) {
-  background: linear-gradient(180deg, #ffffff 0%, var(--rose) 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #f8ebe7 100%);
 }
 
 .value-card:nth-child(3) {
-  background: linear-gradient(180deg, #ffffff 0%, var(--sky) 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #edf4ee 100%);
 }
 
 .value-card:nth-child(4) {
-  background: linear-gradient(180deg, #ffffff 0%, var(--sun) 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #fbf0cf 100%);
 }
 
 .value-card:hover {
@@ -1268,6 +1271,19 @@ h3 {
   font-weight: 900;
 }
 
+.profile-portrait-photo {
+  overflow: hidden;
+  border: 3px solid var(--white);
+  background: var(--white);
+}
+
+.profile-portrait-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.1);
+}
+
 .profile-copy h3 {
   margin-bottom: 10px;
   font-size: clamp(1.3rem, 2vw, 1.9rem);
@@ -1480,7 +1496,7 @@ h3 {
   border: 1px solid rgba(15, 118, 110, 0.16);
   border-radius: 18px;
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.86), rgba(232, 250, 245, 0.78)),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(231, 242, 237, 0.9)),
     var(--white);
   box-shadow: var(--shadow);
 }
@@ -1489,7 +1505,7 @@ h3 {
   position: relative;
   overflow: hidden;
   background:
-    linear-gradient(135deg, rgba(157, 226, 209, 0.36), rgba(255, 241, 199, 0.5) 48%, rgba(255, 232, 229, 0.5)),
+    linear-gradient(135deg, rgba(15, 39, 35, 0.12), rgba(15, 118, 110, 0.18) 42%, rgba(244, 199, 107, 0.22)),
     var(--paper);
   color: var(--ink);
 }
@@ -1498,8 +1514,10 @@ h3 {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(115deg, transparent 0 58%, rgba(15, 118, 110, 0.08) 58% 64%, transparent 64%),
-    repeating-linear-gradient(135deg, rgba(15, 118, 110, 0.08) 0 1px, transparent 1px 20px);
+    linear-gradient(115deg, transparent 0 58%, rgba(15, 118, 110, 0.1) 58% 64%, transparent 64%),
+    radial-gradient(circle at 12% 16%, rgba(157, 226, 209, 0.22), transparent 30%),
+    radial-gradient(circle at 86% 74%, rgba(244, 199, 107, 0.2), transparent 28%),
+    repeating-linear-gradient(135deg, rgba(15, 118, 110, 0.07) 0 1px, transparent 1px 20px);
   pointer-events: none;
   content: "";
 }
@@ -1600,14 +1618,16 @@ h3 {
   position: relative;
   overflow: hidden;
   background:
-    linear-gradient(135deg, rgba(255, 232, 229, 0.88), rgba(232, 242, 255, 0.92) 52%, rgba(255, 241, 199, 0.74)),
+    linear-gradient(135deg, rgba(15, 118, 110, 0.14), rgba(232, 244, 238, 0.86) 46%, rgba(244, 199, 107, 0.22)),
     var(--soft);
 }
 
 .vision-band::before {
   background:
-    linear-gradient(115deg, transparent 0 20%, rgba(217, 85, 74, 0.1) 20% 27%, transparent 27%),
-    linear-gradient(115deg, transparent 0 78%, rgba(47, 128, 237, 0.12) 78% 84%, transparent 84%);
+    linear-gradient(115deg, transparent 0 20%, rgba(15, 118, 110, 0.1) 20% 27%, transparent 27%),
+    linear-gradient(115deg, transparent 0 78%, rgba(244, 199, 107, 0.16) 78% 84%, transparent 84%),
+    radial-gradient(circle at 14% 72%, rgba(157, 226, 209, 0.2), transparent 26%),
+    radial-gradient(circle at 86% 22%, rgba(217, 85, 74, 0.1), transparent 28%);
 }
 
 .vision-statement {
@@ -1619,8 +1639,8 @@ h3 {
   border: 1px solid rgba(217, 85, 74, 0.16);
   border-radius: 18px;
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.72), rgba(255, 232, 229, 0.72)),
-    rgba(255, 255, 255, 0.7);
+    linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(244, 238, 220, 0.86)),
+    rgba(255, 255, 255, 0.78);
   box-shadow: var(--shadow);
 }
 

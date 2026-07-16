@@ -11,13 +11,12 @@ const isEnglish = document.documentElement.lang === "en";
 const openMenuLabel = isEnglish ? "Open menu" : "Hap menune";
 const closeMenuLabel = isEnglish ? "Close menu" : "Mbyll menune";
 const defaultHeroImages = [
-  "assets/images/activities/ballinabackground.jpg",
-  "assets/images/activities/ballinabackground2.jpg",
-  "assets/images/activities/ballinabackground3.jpg",
-  "assets/images/activities/ballinabackground4.jpg",
-  "assets/images/activities/ballinabackground5.jpg",
-  "assets/images/activities/ballinabackground6.jpg",
-  "assets/images/activities/ballinabackground7.jpg",
+  "assets/images/activities/gymn1.jpg",
+  "assets/images/activities/gymn2.jpg",
+  "assets/images/activities/ngc1.jpg",
+  "assets/images/activities/normatrad1.jpg",
+  "assets/images/activities/toether3.jpg",
+  "assets/images/activities/together1.jpg",
 ];
 
 function setHeaderState() {
