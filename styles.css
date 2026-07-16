@@ -353,6 +353,10 @@ h1 {
   margin-right: 0;
 }
 
+.home-hero .hero-panel-en {
+  transform: translateY(128px);
+}
+
 h2 {
   margin-bottom: 14px;
   font-family: var(--display-font);
@@ -570,11 +574,12 @@ h3 {
 
 .contact-page .page-hero,
 .contact-page .page-hero-content {
-  min-height: 40svh;
+  min-height: 76svh;
 }
 
 .contact-page .page-hero-content {
-  padding-bottom: clamp(24px, 4vh, 44px);
+  gap: clamp(16px, 2.5vw, 28px);
+  padding-bottom: clamp(28px, 5vh, 56px);
 }
 
 .contact-page .section {
@@ -1220,6 +1225,28 @@ h3 {
   margin-bottom: clamp(16px, 2.5vw, 28px);
 }
 
+.contact-hero-team {
+  margin-top: clamp(38px, 9vh, 110px);
+}
+
+.contact-hero-team .team-intro,
+.contact-hero-team .eyebrow.dark {
+  color: var(--white);
+}
+
+.contact-hero-team .eyebrow.dark {
+  opacity: 0.82;
+}
+
+.contact-hero-team .profile-copy .eyebrow.dark {
+  color: var(--ink);
+  opacity: 1;
+}
+
+.contact-hero-team .profile-copy h3 {
+  color: var(--ink);
+}
+
 .team-intro h2 {
   max-width: 760px;
   font-size: clamp(1.65rem, 3.4vw, 3.1rem);
@@ -1229,7 +1256,7 @@ h3 {
 .profile-stack {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
+  gap: clamp(46px, 7vw, 96px);
 }
 
 .profile-section {
@@ -1240,11 +1267,11 @@ h3 {
   padding: clamp(18px, 3vw, 32px);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: var(--white);
+  background: rgba(255, 255, 255, 0.92);
 }
 
 .profile-section-alt {
-  background: var(--soft);
+  background: rgba(255, 255, 255, 0.92);
 }
 
 .profile-portrait {
@@ -1304,21 +1331,29 @@ h3 {
 }
 
 .contact-page-section .home-contact-layout {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(46px, 7vw, 96px);
   align-items: start;
 }
 
 .contact-page-section .home-contact-info {
+  align-content: start;
   gap: 14px;
+  padding: clamp(18px, 2.4vw, 24px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.16);
 }
 
 .contact-page-section .home-contact-card {
-  gap: 4px;
+  gap: 2px;
 }
 
 .contact-page-section .home-contact-card span,
 .contact-page-section .home-contact-card a {
-  min-height: 34px;
-  padding: 5px 0;
+  min-height: 30px;
+  padding: 3px 0;
 }
 
 .contact-page .contact-form {

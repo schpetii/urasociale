@@ -32,7 +32,7 @@
         <a class="active" href="index-en.html">Home</a>
         <a href="misioni-en.html">Mission</a>
         <a href="aktivitetet-en.html">Activities</a>
-        <a href="index-en.html#contact">Contact</a>
+        <a href="kontakt-en.html">Contact</a>
         <span class="language-switch" aria-label="Language">
           <a href="index.html" lang="sq">AL</a>
           <a class="active" href="index-en.html" lang="en">EN</a>
@@ -55,7 +55,7 @@
         <div class="hero-content page-shell">
           <div class="hero-copy">
             <p class="eyebrow">Organization for Development and Communication in Vushtrri</p>
-            <h1 id="hero-title">URA Sociale connects communities through education, dignity and equal opportunity.</h1>
+            <h1 id="hero-title">A bridge for youth, schools and the community.</h1>
             <p class="hero-lede">
               We assist and cooperate in advancing the position of youth in society.
             </p>
@@ -64,14 +64,14 @@
                 <i data-lucide="calendar-days"></i>
                 Activities
               </a>
-              <a class="button button-light" href="index-en.html#contact">
+              <a class="button button-light" href="kontakt-en.html">
                 <i data-lucide="send"></i>
                 Collaborate
               </a>
             </div>
           </div>
 
-          <div class="hero-panel" aria-label="Main focus areas">
+          <div class="hero-panel hero-panel-en" aria-label="Main focus areas">
             <div class="focus-pill">
               <i data-lucide="graduation-cap"></i>
               Quality education
@@ -117,88 +117,64 @@
         <div class="page-shell landing-slider" data-slideshow>
           <div class="slider-intro">
             <p class="eyebrow dark">Explore the site</p>
-            <h2 id="slider-title">The URA Sociale mission in a calm presentation.</h2>
+            <h2 id="slider-title">Discover more about URA Sociale, its activities and its team.</h2>
           </div>
 
           <div class="slide-stage">
+            <button class="slide-arrow slide-arrow-prev" type="button" data-slide-prev aria-label="Previous slide">
+              <i data-lucide="chevron-left"></i>
+            </button>
+            <button class="slide-arrow slide-arrow-next" type="button" data-slide-next aria-label="Next slide">
+              <i data-lucide="chevron-right"></i>
+            </button>
             <article class="landing-slide is-active" data-slide>
               <div class="slide-media mission-slide-media" aria-hidden="true"></div>
               <div class="slide-copy">
-                <span class="tag">Mission</span>
-                <h3>A social bridge for young people, families, schools and institutions.</h3>
+                <span class="tag">About Us</span>
                 <p>
-                  URA Sociale works for education, safety, dignity and equal participation in the community.
+                  Ura Sociale is a non-governmental organization in Vushtrri focused on youth empowerment, inclusion and equality.
                 </p>
                 <a class="button button-dark" href="misioni-en.html">
                   <i data-lucide="arrow-right"></i>
-                  Read the mission
+                  Read more
+                </a>
+              </div>
+            </article>
+
+            <article class="landing-slide" data-slide>
+              <div class="slide-media activities-slide-media" aria-hidden="true"></div>
+              <div class="slide-copy">
+                <span class="tag">Activities</span>
+                <p>
+                  View initiatives carried out with young people, schools, institutions and local partners.
+                </p>
+                <a class="button button-dark" href="aktivitetet-en.html">
+                  <i data-lucide="arrow-right"></i>
+                  View activities
+                </a>
+              </div>
+            </article>
+
+            <article class="landing-slide" data-slide>
+              <div class="slide-media contact-slide-media" aria-hidden="true"></div>
+              <div class="slide-copy">
+                <span class="tag">Contact</span>
+                <p>
+                  The contact page includes the leadership team, role portfolio and direct message form.
+                </p>
+                <a class="button button-dark" href="kontakt-en.html">
+                  <i data-lucide="arrow-right"></i>
+                  Open contact
                 </a>
               </div>
             </article>
           </div>
-        </div>
-      </section>
 
-      <section class="home-contact" id="contact">
-        <div class="page-shell home-contact-layout">
-          <div class="home-contact-info">
-            <p class="eyebrow">Contact</p>
-            <h2>Build a new bridge of cooperation.</h2>
-            <address class="home-contact-card">
-              <span>
-                <i data-lucide="map-pin"></i>
-                Deshmoret e Kombit, no. 13, Vushtrri
-              </span>
-              <span>
-                <i data-lucide="user-round"></i>
-                Representative: Mergime Jashari
-              </span>
-              <a href="mailto:office@urasociale.com">
-                <i data-lucide="mail"></i>
-                office@urasociale.com
-              </a>
-              <a href="https://facebook.com/urasociale" target="_blank" rel="noreferrer">
-                <i data-lucide="external-link"></i>
-                facebook.com/urasociale
-              </a>
-            </address>
+          <div class="slide-dots" aria-label="Choose section">
+            <button class="active" type="button" data-slide-dot="0" aria-label="Show mission"></button>
+            <button type="button" data-slide-dot="1" aria-label="Show activities"></button>
+            <button type="button" data-slide-dot="2" aria-label="Show contact"></button>
           </div>
-          <form class="contact-form" action="https://formsubmit.co/office@urasociale.com" method="POST">
-            <input type="hidden" name="_subject" value="New message from the URA Sociale website" />
-            <input type="hidden" name="_template" value="table" />
-            <input class="form-honey" type="text" name="_honey" tabindex="-1" autocomplete="off" />
-
-            <div class="form-header">
-              <p class="eyebrow">Write directly</p>
-              <h3>Send a message</h3>
-            </div>
-
-            <div class="form-grid">
-              <label>
-                Name
-                <input type="text" name="name" autocomplete="name" required />
-              </label>
-              <label>
-                Email
-                <input type="email" name="email" autocomplete="email" required />
-              </label>
-            </div>
-
-            <label>
-              Subject
-              <input type="text" name="subject" required />
-            </label>
-
-            <label>
-              Message
-              <textarea name="message" rows="5" required></textarea>
-            </label>
-
-            <button class="button button-primary contact-submit" type="submit">
-              <i data-lucide="send"></i>
-              Send message
-            </button>
-          </form>
         </div>
       </section>
     </main>
