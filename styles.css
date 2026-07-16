@@ -565,7 +565,7 @@ h3 {
 }
 
 .contact-hero .page-hero-bg {
-  background-image: url("assets/images/activities/ballinabackground4.jpg");
+  background-image: url("assets/images/activities/together1.jpg");
 }
 
 .contact-page .page-hero,
@@ -1000,15 +1000,15 @@ h3 {
 }
 
 .mission-slide-media {
-  background-image: url("assets/images/activities/ballinabackground2.jpg");
+  background-image: url("assets/images/activities/gymn2.jpg");
 }
 
 .activities-slide-media {
-  background-image: url("assets/images/activities/ballinabackground3.jpg");
+  background-image: url("assets/images/activities/ngc1.jpg");
 }
 
 .contact-slide-media {
-  background-image: url("assets/images/activities/ballinabackground6.jpg");
+  background-image: url("assets/images/activities/normatrad1.jpg");
 }
 
 .slide-copy {
@@ -1256,14 +1256,14 @@ h3 {
   color: var(--white);
   background:
     linear-gradient(135deg, rgba(15, 118, 110, 0.88), rgba(23, 33, 31, 0.96)),
-    url("assets/images/activities/ballinabackground2.jpg") center / cover;
+    url("assets/images/activities/gymn1.jpg") center / cover;
   box-shadow: var(--shadow);
 }
 
 .profile-section-alt .profile-portrait {
   background:
     linear-gradient(135deg, rgba(217, 85, 74, 0.84), rgba(23, 33, 31, 0.94)),
-    url("assets/images/activities/ballinabackground5.jpg") center / cover;
+    url("assets/images/activities/toether3.jpg") center / cover;
 }
 
 .profile-portrait span {
@@ -1300,7 +1300,7 @@ h3 {
   padding: clamp(34px, 5vw, 56px) 0;
   background:
     linear-gradient(90deg, rgba(23, 33, 31, 0.96), rgba(23, 33, 31, 0.82)),
-    url("assets/images/activities/ballinabackground6.jpg") center / cover;
+    url("assets/images/activities/together1.jpg") center / cover;
 }
 
 .contact-page-section .home-contact-layout {
