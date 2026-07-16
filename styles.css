@@ -2165,7 +2165,12 @@ h3 {
       url("assets/images/activities/together1.jpg") center / cover;
   }
 
+  .contact-page-section .page-shell {
+    width: min(100% - 28px, var(--max));
+  }
+
   .contact-page-section .home-contact-layout {
+    grid-template-columns: 1fr;
     gap: 12px;
   }
 
@@ -2179,7 +2184,7 @@ h3 {
 
   .contact-page-section .home-contact-info,
   .contact-page .contact-form {
-    padding: 18px;
+    padding: 12px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.07);
   }
