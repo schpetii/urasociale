@@ -2018,8 +2018,87 @@ h3 {
   }
 
   .impact-grid article {
-    min-height: 112px;
-    border-right: 1px solid rgba(255, 255, 255, 0.12);
+    min-height: 0;
+    padding: 18px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.055);
+  }
+
+  .impact-strip {
+    padding: 18px 0;
+  }
+
+  .impact-grid {
+    gap: 10px;
+  }
+
+  .impact-grid strong {
+    margin-bottom: 8px;
+    font-size: clamp(2rem, 11vw, 2.65rem);
+  }
+
+  .impact-grid span {
+    max-width: none;
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+
+  .contact-page-section {
+    padding: 24px 0 32px;
+    background:
+      linear-gradient(180deg, rgba(23, 33, 31, 0.98), rgba(23, 33, 31, 0.92)),
+      url("assets/images/activities/together1.jpg") center / cover;
+  }
+
+  .contact-page-section .home-contact-layout {
+    gap: 12px;
+  }
+
+  .contact-page-section .home-contact-info,
+  .contact-page .contact-form {
+    padding: 18px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.07);
+  }
+
+  .contact-page-section .home-contact-info {
+    gap: 10px;
+  }
+
+  .contact-page-section .home-contact-card {
+    gap: 8px;
+  }
+
+  .contact-page-section .home-contact-card span,
+  .contact-page-section .home-contact-card a {
+    align-items: flex-start;
+    min-height: 0;
+    padding: 0;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+  }
+
+  .contact-page-section .home-contact-card svg {
+    flex: 0 0 auto;
+    margin-top: 2px;
+  }
+
+  .contact-page .contact-form {
+    gap: 12px;
+  }
+
+  .contact-page .contact-form input {
+    min-height: 44px;
+  }
+
+  .contact-page .contact-form textarea {
+    min-height: 126px;
+  }
+
+  .contact-page .contact-submit {
+    width: 100%;
+    justify-content: center;
   }
 
   .section {
