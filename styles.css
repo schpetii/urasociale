@@ -1397,6 +1397,10 @@ h3 {
   min-height: 104px;
 }
 
+.mobile-contact-inline {
+  display: none;
+}
+
 .filter-bar {
   display: flex;
   flex-wrap: wrap;
@@ -2146,6 +2150,7 @@ h3 {
   }
 
   .hero-impact {
+    margin-top: 78px;
     padding-bottom: 24px;
   }
 
@@ -2164,6 +2169,14 @@ h3 {
     gap: 12px;
   }
 
+  .contact-page-section .home-contact-info {
+    display: none;
+  }
+
+  .contact-page .contact-form {
+    order: 1;
+  }
+
   .contact-page-section .home-contact-info,
   .contact-page .contact-form {
     padding: 18px;
@@ -2173,6 +2186,19 @@ h3 {
 
   .contact-page-section .home-contact-info {
     gap: 10px;
+  }
+
+  .mobile-contact-inline {
+    display: grid;
+    gap: 10px;
+    padding: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.055);
+  }
+
+  .mobile-contact-inline .eyebrow {
+    margin-bottom: 0;
   }
 
   .contact-page-section .home-contact-card {
