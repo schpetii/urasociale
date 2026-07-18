@@ -2068,6 +2068,10 @@ h3 {
     padding-bottom: 24px;
   }
 
+  .home-hero .hero-panel {
+    transform: translateY(72px);
+  }
+
   .home-hero .hero-panel-en {
     transform: translateY(72px);
   }
