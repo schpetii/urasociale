@@ -2068,6 +2068,10 @@ h3 {
     padding-bottom: 24px;
   }
 
+  .home-hero .hero-panel-en {
+    transform: translateY(72px);
+  }
+
   h2 {
     font-size: clamp(1.55rem, 8vw, 2.45rem);
   }
